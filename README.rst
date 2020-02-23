@@ -11,6 +11,7 @@ Installation
 Using `setup.py`. Execute commands bellow :
 
 ::
+
     git clone https://github.com/alvingalangcitaka/robotframework-imagetotextlibrary.git
     cd robotframework-imagetotextlibrary
     python setup.py install
