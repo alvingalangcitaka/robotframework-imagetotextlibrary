@@ -8,7 +8,7 @@ KEYWORDS = ('tesseractlibrary')
 
 SHORT_DESC = ('Robot Framework library for coverting image to text')
 
-with open(path_join(CURDIR, 'README.srt'), 'r') as readme:
+with open(path_join(CURDIR, 'README.rst'), 'r') as readme:
     LONG_DESCRIPTION = readme.read()
 
 CLASSIFIERS = [
