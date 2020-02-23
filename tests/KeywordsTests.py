@@ -6,8 +6,8 @@ from ImageToTextLibrary.Keywords import Keywords
 class KeywordsTests(unittest.TestCase):
     def test_get_text_from_image_success(self):
         keywords = Keywords()
-        resultText = keywords.get_text_from_image('sample-image.png')
-        self.assertTrue(self, resultText is not None)
+        result_text = keywords.get_text_from_image('sample-image.png')
+        self.assertTrue(self, result_text is not None)
 
     def test_get_text_from_image_empty_image_path(self):
         keywords = Keywords()
