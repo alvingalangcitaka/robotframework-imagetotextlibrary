@@ -8,6 +8,23 @@ It uses `tesseract` to convert the image to text.
 
 Installation
 ------------
+
+1. Install Tesseract
+''''''''''''''''''''
+The library needs `tesseract` to be installed first.
+
+Follow the installation here: https://github.com/tesseract-ocr/tesseract
+
+2. Install the python package
+'''''''''''''''''''''''''''''
+The recommended installation method is using
+`pip <http://pip-installer.org>`__::
+
+    pip install robotframework-imagetotextlibrary
+
+
+**or**
+
 Using `setup.py`. Execute commands bellow :
 
 ::
@@ -15,6 +32,27 @@ Using `setup.py`. Execute commands bellow :
     git clone https://github.com/alvingalangcitaka/robotframework-imagetotextlibrary.git
     cd robotframework-imagetotextlibrary
     python setup.py install
+
+
+Keyword Documentation
+---------------------
+The keyword documentation can be found here.
+
+Example
+-------
+
+::
+
+    *** Setting ***
+    Library     ImageToTextLibrary
+    Library     BuiltIn
+
+    *** Test Cases ***
+    Get Image Text Example
+        ${text}=            Get Text From Image         ${CURDIR}/sample-image.png
+        Log                 ${text}
+        Should Contain      ${text}                     Directory Layout
+
 
 
 Directory Layout
